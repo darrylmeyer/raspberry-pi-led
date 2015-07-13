@@ -24,8 +24,8 @@ def activateLED(pin, wait_time):
 
 wait_time = float(sys.argv[1]) if len(sys.argv) > 1 else 1 
 pin_1 = int(sys.argv[2]) if len(sys.argv) > 2 else 22
-pin_2 = int(sys.argv[3]) if len(sys.argv) > 2 else 24
-pin_3 = int(sys.argv[4]) if len(sys.argv) > 2 else 23
+pin_2 = int(sys.argv[3]) if len(sys.argv) > 3 else 24
+pin_3 = int(sys.argv[4]) if len(sys.argv) > 4 else 23
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(pin_1, GPIO.OUT)
