@@ -1,7 +1,6 @@
 # raspberry-pi-led
 
-This repo contains some scripts I created for controlling LEDs with my Raspberry Pi.
-It's just some basic stuff like turning an LED on for 1 second then turning it off again. It will get more complicated as I go along.
+This repo contains some scripts I created for controlling LEDs with a Raspberry Pi.
 
 Explaination of the scripts in this repo:
 
@@ -29,5 +28,5 @@ It turns on and off multiple LEDs in sequence, as specified by command line argu
  To run this script enter into the terminal: `sudo python multiple_leds.py <time> <pin 1> ... <pin n>`
  Where time is the amount of time each LED will be on for and pin 1 to pin n are the pin numbers of the LEDs.
  
-# Thanks
-Thanks to Jeremy Morgan for his tutorial and Python code – available [here](https://www.jeremymorgan.com/tutorials/raspberry-pi/how-to-blink-led-raspberry-pi-2/). It helped to get me started.
+## Thanks
+Thanks to Jeremy Morgan for his tutorial and Python code that helped to get me started – available [here](https://www.jeremymorgan.com/tutorials/raspberry-pi/how-to-blink-led-raspberry-pi-2/).
