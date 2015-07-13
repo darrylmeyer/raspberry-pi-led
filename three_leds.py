@@ -1,34 +1,39 @@
-import RPi.GPIO as GPIO
-import time
-
 '''
 Darryl Meyer
 13 July 2015
 
-Lights up 3 LEDs in sequence, in my case a green LED on pin 22,
-a red LED on pin 23 and a yellow LED on pin 24.
+Lights up 3 LEDs in sequence, by default an LED on pin 22,
+n LED on pin 23 and an LED on pin 24.
 
 '''
 
-green = 22
-red = 23
-yellow = 24
-wait_time = 1
+import RPi.GPIO as GPIO
+import time
+import sys
 
+def activateLED(pin, wait_time):
+	try:
+		GPIO.output(pin, GPIO.HIGH) # HIGH = LED on
+		time.sleep(wait_time)
+		GPIO.output(pin, GPIO.LOW) # LOW = LED off
+	except Exception as e:
+		print("Could not light up LED", e)
+		GPIO.output(pin, GPIO.LOW)
+		
+	return;
+
+wait_time = float(sys.argv[1]) if len(sys.argv) > 1 else 2 
+pin_1 = int(sys.argv[2]) if len(sys.argv) > 2 else 22
+pin_2 = int(sys.argv[3]) if len(sys.argv) > 2 else 24
+pin_3 = int(sys.argv[4]) if len(sys.argv) > 2 else 23
 
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(green, GPIO.OUT)
-GPIO.setup(red, GPIO.OUT)
-GPIO.setup(yellow, GPIO.OUT)
+GPIO.setup(pin_1, GPIO.OUT)
+GPIO.setup(pin_2, GPIO.OUT)
+GPIO.setup(pin_3, GPIO.OUT)
 
-def activateLED( pin, delay ):
-  GPIO.output(pin, GPIO.HIGH) # HIGH = LED on
-  time.sleep(delay)
-  GPIO.output(pin, GPIO.LOW) # LOW = LED off
-  return;
-
-activateLED(green,timedelay)
-activateLED(yellow,timedelay)
-activateLED(red,timedelay)
+activateLED(pin_1, wait_time)
+activateLED(pin_2, wait_time)
+activateLED(pin_3, wait_time)
 
 GPIO.cleanup() # close GPIO library

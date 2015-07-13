@@ -1,14 +1,15 @@
-import RPi.GPIO as GPIO
-import time
-import sys
 
 '''
 Darryl Meyer
 13 July 2015
 
-Lights up a single LED, in my case a green LED on pin 22
+Lights up a single LED, by default an LED on pin 22 for 1 second
 
 '''
+
+import RPi.GPIO as GPIO
+import time
+import sys
 
 def activateLED(pin, wait_time):
 	try:
