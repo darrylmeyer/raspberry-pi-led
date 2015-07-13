@@ -7,11 +7,16 @@ Explaination of the scripts in this repo:
 
 ## single_led.py
 
-It turns on an LED for 1 second then turns it off again.
+The default settings are to turn on an LED connected to pin 22 for 1 second then turn it off again.
+
+### Usage
+ To run this script enter into the terminal: sudo python single_led.py
+ You can also scpecify the almount of time the LED stays on in seconds and the pin to use by entering: sudo python single_led.py <time> <pin_number>
 
 ## three_leds.py
 
 It turn on and off 3 LEDs in sequence.
+
 
 
 # Thanks
