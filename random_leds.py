@@ -32,7 +32,7 @@ if len(sys.argv) > 3:
 		try:
 			pins.append(int(sys.argv[3 + i]))
 		except Exception as e:
-			print(sys.argv[3 + i] + " is not a valid pin number")
+			print(str(sys.argv[3 + i]) + " is not a valid pin number")
 
 	for j in range(steps):
 		r = random.randint(0, len(pins) - 1)

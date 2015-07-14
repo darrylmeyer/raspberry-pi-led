@@ -44,5 +44,14 @@ Lights up multiple LEDs in a random sequence.
 To run this script enter into the terminal: `sudo python multiple_leds.py <steps> <time> <pin 1> ... <pin n>`.
 Where steps is the number of LED on-off operations, time is the amount of time an LED will be on for and pin 1 to pin n are the pin numbers of the LEDs.
 
+## simultaneous_leds.py
+
+Lights up multiple LEDs simultaneously.
+
+### Usage
+To run this script enter into the terminal: `sudo python multiple_leds.py <time> <pin 1> ... <pin n>`.
+Where time is the amount of time the LEDs will be on for and pin 1 to pin n are the pin numbers of the LEDs.
+
+
 ## Thanks
 Thanks to Jeremy Morgan for his tutorial and Python code that helped to get me started – available [here](https://www.jeremymorgan.com/tutorials/raspberry-pi/how-to-blink-led-raspberry-pi-2/).
