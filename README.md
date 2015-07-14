@@ -41,7 +41,7 @@ Pin is by default 22. The message can include letters, numbers and spaces and sh
 Lights up multiple LEDs in a random sequence.
 
 ### Usage
-To run this script enter into the terminal: `sudo python multiple_leds.py <steps> <time> <pin 1> ... <pin n>`.
+To run this script enter into the terminal: `sudo python random_leds.py <steps> <time> <pin 1> ... <pin n>`.
 Where steps is the number of LED on-off operations, time is the amount of time an LED will be on for and pin 1 to pin n are the pin numbers of the LEDs.
 
 ## simultaneous_leds.py
@@ -49,7 +49,7 @@ Where steps is the number of LED on-off operations, time is the amount of time a
 Lights up multiple LEDs simultaneously.
 
 ### Usage
-To run this script enter into the terminal: `sudo python multiple_leds.py <time> <pin 1> ... <pin n>`.
+To run this script enter into the terminal: `sudo python simultaneous_leds.py <time> <pin 1> ... <pin n>`.
 Where time is the amount of time the LEDs will be on for and pin 1 to pin n are the pin numbers of the LEDs.
 
 ## random_simultaneous_leds.py
@@ -57,7 +57,7 @@ Where time is the amount of time the LEDs will be on for and pin 1 to pin n are 
 Lights up multiple LEDs simultaneously in a random sequence (random groups).
 
 ### Usage
-To run this script enter into the terminal: `sudo python multiple_leds.py <steps> <time> <pin 1> ... <pin n>`.
+To run this script enter into the terminal: `sudo python random_simultaneous_leds.py <steps> <time> <pin 1> ... <pin n>`.
 Where steps is the number of LED on-off operations (number of groups), time is the amount of time the LEDs will be on for and pin 1 to pin n are the pin numbers of the LEDs.
 
 ## Thanks
