@@ -50,4 +50,4 @@ if len(sys.argv) > 2:
 
 	GPIO.cleanup()
 else:
-	print("Usage: sudo python multiple_leds.py <steps> <time> <pin 1> ... <pin n>")
+	print("Usage: sudo python simultaneous_leds.py <time> <pin 1> ... <pin n>")

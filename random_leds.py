@@ -44,7 +44,7 @@ if len(sys.argv) > 3:
 
 	GPIO.cleanup()
 else:
-	print("Usage: sudo python multiple_leds.py <steps> <time> <pin 1> ... <pin n>")
+	print("Usage: sudo python random_leds.py <steps> <time> <pin 1> ... <pin n>")
 
 
 
